@@ -1,7 +1,1 @@
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-
-#doris
-selectdb/doris.be-ubuntu:3.0.3
-selectdb/doris.fe-ubuntu:3.0.3
-selectdb/alpine:latest
+tdengine/tdengine:3.3.4.8
