@@ -1,1 +1,1 @@
-redis:7.2.7
+tdengine/tdengine:3.3.5.0
