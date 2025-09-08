@@ -1,2 +1,2 @@
 docker.io/searxng/searxng:latest
-valkey:8-alpine
+valkey/valkey:8-alpine
