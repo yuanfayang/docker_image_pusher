@@ -1,2 +1,2 @@
- docker.io/searxng/searxng:latest
-docker.io/library/caddy:2-alpine
+docker.io/searxng/searxng:latest
+valkey:8-alpine
