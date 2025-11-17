@@ -2,16 +2,16 @@
 # docker.io/searxng/searxng:latest
 # valkey/valkey:8-alpine
 
-##### 拉取dify1.9.0镜像
-langgenius/dify-api:1.9.0
-langgenius/dify-web:1.9.0
+##### 拉取dify1.10.0镜像
+langgenius/dify-api:1.10.0
+langgenius/dify-web:1.10.0
 postgres:15-alpine
 redis:6-alpine
 langgenius/dify-sandbox:0.2.12
-langgenius/dify-plugin-daemon:0.3.0-local
+langgenius/dify-plugin-daemon:0.4.1-local
 ubuntu/squid:latest
 nginx:latest
-semitechnologies/weaviate:1.19.0
+semitechnologies/weaviate:1.27.0
 langgenius/qdrant:v1.7.3
 couchbase/server:latest
 pgvector/pgvector:pg16
