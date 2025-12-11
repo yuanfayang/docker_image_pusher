@@ -3,7 +3,7 @@
 # valkey/valkey:8-alpine
 
 ##### 拉取dify1.10.0镜像
-langgenius/dify-api:1.10.0
+langgenius/dify-api:1.10.1-fix.1
 langgenius/dify-web:1.10.1-fix.1
 postgres:15-alpine
 redis:6-alpine
