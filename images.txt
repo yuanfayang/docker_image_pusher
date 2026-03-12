@@ -2,26 +2,32 @@
 # docker.io/searxng/searxng:latest
 # valkey/valkey:8-alpine
 
-##### 拉取dify1.10.0镜像
-# langgenius/dify-api:1.10.1-fix.1
-# langgenius/dify-web:1.10.1-fix.1
-# postgres:15-alpine
-# redis:6-alpine
-# langgenius/dify-sandbox:0.2.12
-# langgenius/dify-plugin-daemon:0.4.1-local
-# ubuntu/squid:latest
-# nginx:latest
-# semitechnologies/weaviate:1.27.0
-# langgenius/qdrant:v1.7.3
-# couchbase/server:latest
-# pgvector/pgvector:pg16
+# Dify 1.13.1默认启动服务镜像列表
+#init_permissions
+busybox:latest
+#api, worker, worker_beat
+langgenius/dify-api:1.13.0
+#web
+langgenius/dify-web:1.13.0
+#redis
+redis:6-alpine
+#sandbox
+langgenius/dify-sandbox:0.2.12
+#plugin_daemon
+langgenius/dify-plugin-daemon:0.5.3-local
+#ssrf_proxy
+ubuntu/squid:latest
+#nginx
+nginx:latest
+#weaviate (通过 COMPOSE_PROFILES 自动启用)
+semitechnologies/weaviate:1.27.0
 
 
 #### 拉取Geoserver
 # docker.osgeo.org/geoserver:2.28.1
 
 #### langfuse
-minio/minio:RELEASE.2025-09-07T16-13-09Z
-docker.io/langfuse/langfuse:3
-docker.io/langfuse/langfuse-worker:3
-clickhouse/clickhouse-server:25.12-alpine
+# minio/minio:RELEASE.2025-09-07T16-13-09Z
+# docker.io/langfuse/langfuse:3
+# docker.io/langfuse/langfuse-worker:3
+# clickhouse/clickhouse-server:25.12-alpine
