@@ -4,23 +4,23 @@
 
 # Dify 1.13.1默认启动服务镜像列表
 #init_permissions
-busybox:latest
+# busybox:latest
 #api, worker, worker_beat
-langgenius/dify-api:1.13.0
+# langgenius/dify-api:1.13.0
 #web
-langgenius/dify-web:1.13.0
+# langgenius/dify-web:1.13.0
 #redis
-redis:6-alpine
+# redis:6-alpine
 #sandbox
-langgenius/dify-sandbox:0.2.12
+# langgenius/dify-sandbox:0.2.12
 #plugin_daemon
-langgenius/dify-plugin-daemon:0.5.3-local
+# langgenius/dify-plugin-daemon:0.5.3-local
 #ssrf_proxy
-ubuntu/squid:latest
+# ubuntu/squid:latest
 #nginx
 nginx:latest
 #weaviate (通过 COMPOSE_PROFILES 自动启用)
-semitechnologies/weaviate:1.27.0
+# semitechnologies/weaviate:1.27.0
 
 
 #### 拉取Geoserver
@@ -28,6 +28,6 @@ semitechnologies/weaviate:1.27.0
 
 #### langfuse
 # minio/minio:RELEASE.2025-09-07T16-13-09Z
-# docker.io/langfuse/langfuse:3
-# docker.io/langfuse/langfuse-worker:3
+docker.io/langfuse/langfuse:3
+docker.io/langfuse/langfuse-worker:3
 # clickhouse/clickhouse-server:25.12-alpine
