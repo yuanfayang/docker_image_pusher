@@ -31,3 +31,6 @@ nginx:latest
 docker.io/langfuse/langfuse:3
 docker.io/langfuse/langfuse-worker:3
 # clickhouse/clickhouse-server:25.12-alpine
+
+# new api
+calciumion/new-api:v0.12.9
