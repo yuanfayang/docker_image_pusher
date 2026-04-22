@@ -34,3 +34,5 @@ docker.io/langfuse/langfuse-worker:3
 
 # new api
 calciumion/new-api:v0.12.9
+
+nacos/nacos-server:v2.5.1
