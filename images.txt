@@ -1,4 +1,4 @@
-# Dify 1.17.1 镜像列表（供 docker_image_pusher 使用）
+# Dify 1.18.0 镜像列表（供 docker_image_pusher 使用）
 # 格式：每行一个镜像，支持 # 注释、--platform=xxx 指定架构
 # 阿里云命名空间：out-images
 # 提交后自动触发 GitHub Action 转存
@@ -6,15 +6,20 @@
 # ==========================================
 # 1. Dify 核心服务镜像（必须）
 # ==========================================
-langgenius/dify-api:1.17.1
-langgenius/dify-web:1.17.1
+langgenius/dify-api:1.18.0
+langgenius/dify-web:1.18.0
 langgenius/dify-sandbox:0.2.15
 langgenius/dify-plugin-daemon:0.6.10-local
-langgenius/dify-agent-backend:1.17.1
-langgenius/dify-agent-local-sandbox:1.17.1
+langgenius/dify-agent-backend:1.18.0
+langgenius/dify-agent-local-sandbox:1.18.0
 
 # ==========================================
-# 2. 基础依赖镜像（默认部署必须）
+# 2. KnowledgeFS 服务镜像（v1.18.0 新增，Agent 知识库 Beta）
+# ==========================================
+langgenius/dify-knowledge-fs-api:deploy-konwledge
+
+# ==========================================
+# 3. 基础依赖镜像（默认部署必须）
 # ==========================================
 postgres:15-alpine
 redis:6-alpine
@@ -23,28 +28,28 @@ ubuntu/squid:latest
 busybox:latest
 
 # ==========================================
-# 3. 常用可选镜像
+# 4. 常用可选镜像
 # ==========================================
 certbot/certbot
-cr.weaviate.io/semitechnologies/weaviate:1.39.2
+cr.weaviate.io/semitechnologies/weaviate:1.39.13
 langgenius/qdrant:v1.8.3
 mysql:8.0
 
 # ==========================================
-# 4. Milvus 向量数据库（启用 milvus profile 时）
+# 5. Milvus 向量数据库（启用 milvus profile 时）
 # ==========================================
 milvusdb/milvus:v2.6.3
 quay.io/coreos/etcd:v3.5.5
 minio/minio:RELEASE.2023-03-20T20-16-18Z
 
 # ==========================================
-# 5. OpenSearch 向量数据库（启用 opensearch profile 时）
+# 6. OpenSearch 向量数据库（启用 opensearch profile 时）
 # ==========================================
 opensearchproject/opensearch:latest
 opensearchproject/opensearch-dashboards:latest
 
 # ==========================================
-# 6. 其他向量数据库（按需启用对应 profile）
+# 7. 其他向量数据库（按需启用对应 profile）
 # ==========================================
 oceanbase/oceanbase-ce:4.3.5-lts
 oceanbase/seekdb:latest
