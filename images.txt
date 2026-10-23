@@ -4,12 +4,12 @@
 # 提交后自动触发 GitHub Action 转存
 
 # ==========================================
-# 1. Dify 核心服务镜像（必须）
+# 1. Dify 核心服务镜像（必须）- 版本更新
 # ==========================================
 langgenius/dify-api:1.18.0
 langgenius/dify-web:1.18.0
-langgenius/dify-sandbox:0.2.15
-langgenius/dify-plugin-daemon:0.6.10-local
+# langgenius/dify-sandbox:0.2.15  # 版本未变化，无需重新拉取
+# langgenius/dify-plugin-daemon:0.6.10-local  # 版本未变化，无需重新拉取
 langgenius/dify-agent-backend:1.18.0
 langgenius/dify-agent-local-sandbox:1.18.0
 
@@ -19,49 +19,49 @@ langgenius/dify-agent-local-sandbox:1.18.0
 langgenius/dify-knowledge-fs-api:deploy-konwledge
 
 # ==========================================
-# 3. 基础依赖镜像（默认部署必须）
+# 3. 基础依赖镜像（默认部署必须）- 版本未变化
 # ==========================================
-postgres:15-alpine
-redis:6-alpine
-nginx:latest
-ubuntu/squid:latest
-busybox:latest
+# postgres:15-alpine  # 版本未变化，无需重新拉取
+# redis:6-alpine  # 版本未变化，无需重新拉取
+# nginx:latest  # 版本未变化，无需重新拉取
+# ubuntu/squid:latest  # 版本未变化，无需重新拉取
+# busybox:latest  # 版本未变化，无需重新拉取
 
 # ==========================================
-# 4. 常用可选镜像
+# 4. 常用可选镜像 - Weaviate 版本更新
 # ==========================================
-certbot/certbot
+# certbot/certbot  # 版本未变化，无需重新拉取
 cr.weaviate.io/semitechnologies/weaviate:1.39.13
-langgenius/qdrant:v1.8.3
-mysql:8.0
+# langgenius/qdrant:v1.8.3  # 版本未变化，无需重新拉取
+# mysql:8.0  # 版本未变化，无需重新拉取
 
 # ==========================================
-# 5. Milvus 向量数据库（启用 milvus profile 时）
+# 5. Milvus 向量数据库（启用 milvus profile 时）- 版本未变化
 # ==========================================
-milvusdb/milvus:v2.6.3
-quay.io/coreos/etcd:v3.5.5
-minio/minio:RELEASE.2023-03-20T20-16-18Z
+# milvusdb/milvus:v2.6.3  # 版本未变化，无需重新拉取
+# quay.io/coreos/etcd:v3.5.5  # 版本未变化，无需重新拉取
+# minio/minio:RELEASE.2023-03-20T20-16-18Z  # 版本未变化，无需重新拉取
 
 # ==========================================
-# 6. OpenSearch 向量数据库（启用 opensearch profile 时）
+# 6. OpenSearch 向量数据库（启用 opensearch profile 时）- 版本未变化
 # ==========================================
-opensearchproject/opensearch:latest
-opensearchproject/opensearch-dashboards:latest
+# opensearchproject/opensearch:latest  # 版本未变化，无需重新拉取
+# opensearchproject/opensearch-dashboards:latest  # 版本未变化，无需重新拉取
 
 # ==========================================
-# 7. 其他向量数据库（按需启用对应 profile）
+# 7. 其他向量数据库（按需启用对应 profile）- 版本未变化
 # ==========================================
-oceanbase/oceanbase-ce:4.3.5-lts
-oceanbase/seekdb:latest
-pgvector/pgvector:pg16
-tensorchord/pgvecto-rs:pg16-v0.3.0
-ghcr.io/chroma-core/chroma:0.5.20
-containers.intersystems.com/intersystems/iris-community:2025.3
-container-registry.oracle.com/database/free:latest
-opengauss/opengauss:7.0.0-RC1
-myscale/myscaledb:1.6.4
-matrixorigin/matrixone:2.1.1
-docker.elastic.co/elasticsearch/elasticsearch:8.14.3
-docker.elastic.co/kibana/kibana:8.14.3
-downloads.unstructured.io/unstructured-io/unstructured-api:latest
-vastdata/vastbase-vector
+# oceanbase/oceanbase-ce:4.3.5-lts  # 版本未变化，无需重新拉取
+# oceanbase/seekdb:latest  # 版本未变化，无需重新拉取
+# pgvector/pgvector:pg16  # 版本未变化，无需重新拉取
+# tensorchord/pgvecto-rs:pg16-v0.3.0  # 版本未变化，无需重新拉取
+# ghcr.io/chroma-core/chroma:0.5.20  # 版本未变化，无需重新拉取
+# containers.intersystems.com/intersystems/iris-community:2025.3  # 版本未变化，无需重新拉取
+# container-registry.oracle.com/database/free:latest  # 版本未变化，无需重新拉取
+# opengauss/opengauss:7.0.0-RC1  # 版本未变化，无需重新拉取
+# myscale/myscaledb:1.6.4  # 版本未变化，无需重新拉取
+# matrixorigin/matrixone:2.1.1  # 版本未变化，无需重新拉取
+# docker.elastic.co/elasticsearch/elasticsearch:8.14.3  # 版本未变化，无需重新拉取
+# docker.elastic.co/kibana/kibana:8.14.3  # 版本未变化，无需重新拉取
+# downloads.unstructured.io/unstructured-io/unstructured-api:latest  # 版本未变化，无需重新拉取
+# vastdata/vastbase-vector  # 版本未变化，无需重新拉取
